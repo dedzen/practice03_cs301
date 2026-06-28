@@ -12,7 +12,7 @@ BEGIN
     IF NOT EXISTS (
         SELECT 1
         FROM customers
-        WHERE id = p_customer_id
+        WHERE customer_id = p_customer_id
     ) THEN
         RAISE EXCEPTION 'Customer does not exist';
     END IF;
