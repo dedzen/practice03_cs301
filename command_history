@@ -1,0 +1,2 @@
+sudo -u postgres createdb practice3
+psql -U postgres -d practice2 -f CreateDB.sql
